@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Jogo da velha</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="icon.jfif">
+
+
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <h1>Jogo da velha</h1>
+    <!--botoes-->
+    <div id="buttons-container">
+        <button id="2player" class="btn btn-primary">2 Jogadores</button>
+        <button id="IAplayer" class="btn btn-primary">Contra IA</button>
+    </div>
+    <!--Fim botoes-->
+    <!--corpo do jogo da velha-->
+    <div id="container" class="hide">
+        <div class="box" id="Block-1"></div>
+        <div class="box" id="Block-2"></div>
+        <div class="box" id="Block-3"></div>
+        <div class="box" id="Block-4"></div>
+        <div class="box" id="Block-5"></div>
+        <div class="box" id="Block-6"></div>
+        <div class="box" id="Block-7"></div>
+        <div class="box" id="Block-8"></div>
+        <div class="box" id="Block-9"></div>
+        <!--placar-->
+        <div id="scoreboard-container">
+            <h2>Placar</h2>
+            <span class="score-x">
+                <span id="x-scoreboard">X:</span>
+            <span id="x-scoreboard-1">0</span>
+            </span>
+            <span class="score-x">
+                <span id="o-scoreboard"></span>
+            <span id="o-scoreboard-2">:0</span>
+            </span>
+        </div>
+        <!--fim placar-->
+    </div>
+    <!--Fim do corpo-->
+    <!--elementos x e 0-->
+    <div class="hide">
+        <div class="x">X</div>
+        <div class="o"></div>
+    </div>
+    <!--fim elementos x e 0-->
+    <!--mensagem de vencedor-->
+    <div id="message" class="hide">
+        <p></p>
+    </div>
+    <!--fim mensagem de vencedor-->
+    <!--script responsavel pela logica do jogo-->
+    <script src=" jogo.js "></script>
+
+</body>
+
+</html>
